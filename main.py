@@ -13,7 +13,7 @@ import ipaddress
 #logging.critical('This is a critical message')
 
 
-r = requests.get('https://sinoptik.ua/погода-москва')
+r = requests.get('https://sinoptik.ua/погода-тюмень')
 html = BS(r.content, 'html.parser')
 bot = telebot.TeleBot(config.token)
 
